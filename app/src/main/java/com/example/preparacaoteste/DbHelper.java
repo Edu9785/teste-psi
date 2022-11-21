@@ -7,14 +7,14 @@ import android.util.Log;
 
 public class DbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "bd_numero";
-    public static final String TABLE_Ficha = "teste";
+    public static final String TABLE_FICHA = "ficha";
     private static final int DATABASE_VERSION = 1;
 
     public static final String tableteste = "create table numeros"
             +"( id integer primary key autoincrement,"
             + "numeroUm integer not null,"
             + "numeroDois integer not null,"
-            + "verficacao integer not null)";
+            + "verificacao integer not null)";
 
     public DbHelper (Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
